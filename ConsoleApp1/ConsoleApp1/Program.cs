@@ -18,6 +18,7 @@ namespace ConsoleApp1
                     depthCount++;
                     count++;
                 }
+
                 else if ((count > 0 && text[i] == ')'))
                 {
                     count--;
@@ -33,11 +34,11 @@ namespace ConsoleApp1
                 Console.WriteLine("Скобочная последвательность верна");
                 Console.WriteLine($"Глубина {depthCount}");
             }
+
             else
             {
                 Console.WriteLine("Последовательность не верна");
             }
-
             //if (opener > closer)
             //{
             //    result = closer;
