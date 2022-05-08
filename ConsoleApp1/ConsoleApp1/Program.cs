@@ -25,6 +25,10 @@ namespace ConsoleApp1
                 else if ((text[i] == ')'))
                 {
                     count--;
+                    if (count < 0)
+                    {
+                        break;
+                    }
                 }
             }
 
